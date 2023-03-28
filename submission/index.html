@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hline {
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        #hline2 {
+            width: 100px;
+            margin: 0px auto;
+        }
+
+        #text1 {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            /* font-weight: bold; */
+        }
+
+        table,
+        td {
+            border: solid 1px black;
+        }
+
+        #b {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #cont {
+            background-color: red;
+            color: white;
+            margin-top: 10px;
+            margin-right: -25px;
+        }
+
+        li:not(#subl) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 0px;
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>Create a HTML page that displays the exact same output. Make sure you stick to standards, for example the
+            &ltbr/&gt tag should be closed. Also check whether your tags are paired, for example there shpuld be one
+            &ltp&gt tag for every &ltp&gt tag</li>
+        <li><b>This note in bold</b></li>
+        <li style="text-align:center; list-style-position:inside;"><span align="center">This is the first centred
+                paragraph</span></li>
+        <li>
+            <p align="left">This is the second paragraph. It appears on the left.</p>
+        </li>
+        <li style="text-align: right; list-style-position: inside;"><span align="right">This is the third paragraph. It
+                appears on the right.</span></li>
+        <li style="font-size: 1.17em; font-weight: bold;">
+            <h3><b>This is a level 3 heading</b></h3>
+        </li>
+        <li style="text-align: right; list-style-position:inside; font-size: .83em; font-weight: bold;">
+            <span align="right"><h5 style="display: inline;">This is a level 5 heading</h5></span>
+        </li>
+        <li>Below is a horizontal line with 50% width with respect to the browser width.
+            <div id="hline">
+                <hr>
+            </div>
+        </li>
+        <li>Below is a horizontal line which is 100 pixels wide <div id="hline2">
+                <hr>
+            </div>
+        </li>
+        <li>Now this is a little tough. The image is displayed on the right side and the text is displayed on the left
+            side.
+            This is done using the "img" tag here, but you can use other methods to achieve the same output. The <br>
+            image has to be 500 pixels wide.
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Sheba1.JPG" align="right"
+                style="margin-top: 10px;">
+        </li>
+        <li><a href="https://google.com">Click here to go to Google</a></li>
+        <li>Lists:<br>
+            <ol style="list-style-type: upper-alpha;">
+                <li id="subl">Item 1</li>
+                <li id="subl">Item 2
+                    <ol style="list-style-type: upper-roman;">
+                        <li id="subl">Item 2.1</li>
+                        <li id="subl">Item 2.2</li>
+                        <li id="subl">
+                            <ol>
+                                <li id="subl">Item 2.3.1</li>
+                                <li id="subl">Item 2.3.2</li>
+                                <li id="subl">item 2.3.3</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+
+            <ul style="list-style-type: disc;">
+                <li id="subl">Item 1</li>
+                <li id="subl">Item 2
+                    <ul style="list-style-type: circle;">
+                        <li id="subl">Item 2.1</li>
+                        <li id="subl">Item 2.2</li>
+                        <li id="subl">
+                            <ul style="list-style-type: square;">
+                                <li id="subl">Item 2.3.1</li>
+                                <li id="subl">Item 2.3.2</li>
+                                <li id="subl">item 2.3.3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Subscripts: K<sub>2</sub>Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>.24H2O</li>
+        <li><pre>
+            This 
+                        entire 
+                                line 
+                is 
+                    written 
+                            without     using 
+            any 
+                            special 
+            character. Only one 
+                                    tag
+            can help do this
+        </pre></li>
+        <li style="font-size: 30px; font-family: 'Times New Roman', Times, serif; margin-left: 15px;">
+            <div id="text1">This is written using the font "times" and is 30 pixels big.</div>
+        </li>
+        <li>Simple table
+            <table>
+                <tr>
+                    <td style="font-weight: bold;">Column 1</td>
+                    <td style="font-weight: bold;">Column 1</td>
+                </tr>
+                <tr>
+                    <td>1.1</td>
+                    <td>1.2</td>
+                </tr>
+                <tr>
+                    <td>2.1</td>
+                    <td>2.2</td>
+                </tr>
+            </table>
+        </li>
+        <li>Weird Table
+
+            <table>
+                <tr>
+                    <td rowspan="2" id="b"><u>something</u></td>
+                    <td id="b">something else</td>
+                    <td id="b" style="background-color: black; color: white;">no idea</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="b">its morbin time</td>
+                </tr>
+            </table>
+        </li>
+
+            <div id="cont" style="list-style: none; margin-left: -30px;">18. Add some colors! This line has a red background and white
+                foreground </div>
+
+    </ol>
+</body>
+
+</html>
